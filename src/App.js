@@ -70,26 +70,23 @@ function App() {
   }
 
   return (
-    <div className='md:max-w-[57.5rem] flex bg-white overflow-hidden p-[50px] bg-desktop rounded-3xl'>
+    <div className='md:max-w-[57.5rem] min-w-[20rem] ml-[20px] mr-[20px] flex md:flex-row flex-col justify-between bg-white md:overflow-hidden p-[50px] bg-desktop rounded-3xl'>
       <div className='flex items-center'>
         <img
           src={desktopBox}
           alt='illustration'
-          className='absolute left-[8.438rem] bottom-[17.188rem] z-50'
+          className='absolute md:left-[8.438rem] md:w-[auto] w-[100px] md:bottom-[17.188rem] md:top-auto top-8 left-[3.8rem] z-50'
         ></img>
         <img
           src={desktopIllustration}
           alt='illustration'
-          className='relative left-[-8rem]'
-        ></img>
-        <img
-          src={mobileIllustration}
-          alt='mobile-illustration'
-          className='hidden'
+          className='relative md:left-[-8rem] md:top-auto top-[-10rem]'
         ></img>
       </div>
-      <div className='md:min-w-[22.5rem] mr-[50px]'>
-        <h1 className='font-bold text-4xl mb-[50px]'>FAQ</h1>
+      <div className='md:min-w-[22.5rem] md:mr-[50px] md:text-[16px] text-[12px]'>
+        <h1 className=' md:text-left font-bold text-4xl mb-[50px] text-center'>
+          FAQ
+        </h1>
         <div
           className='mb-[10px] flex items-center justify-between cursor-pointer field'
           onClick={() => setFirst(!first)}

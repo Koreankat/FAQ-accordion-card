@@ -12,17 +12,30 @@ p {
   }
 }
 .bg-desktop {
-  background-image: url(/src/images/bg-pattern-desktop.svg);
+  background-image: url(/src/images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
-  background-position: -36.875rem 65%;
+  background-position: top;
 }
 .para {
   color: hsl(240, 8%, 54%);
-  font-size: 12px;
+  font-size: 0.719rem;
   margin-bottom: 10px;
-  width: 20rem;
+  width: 15.625rem;
 }
 
 .field:hover {
   color: hsl(14, 88%, 65%);
+}
+@media (min-width: 768px) {
+  .para {
+    color: hsl(240, 8%, 54%);
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    width: 20rem;
+  }
+  .bg-desktop {
+    background-image: url(/src/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -36.875rem 65%;
+  }
 }
