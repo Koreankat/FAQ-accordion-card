@@ -70,7 +70,7 @@ function App() {
   }
 
   return (
-    <div className='md:max-w-[57.5rem] min-w-[20rem] ml-[20px] mr-[20px] flex md:flex-row flex-col justify-between bg-white md:overflow-hidden p-[50px] bg-desktop rounded-3xl'>
+    <div className='md:max-w-[57.5rem] min-w-[20rem] ml-[20px] mr-[20px] flex md:flex-row flex-col justify-between bg-white md:overflow-hidden p-[50px] bg-desktop rounded-3xl shadow-2xl'>
       <div className='flex items-center'>
         <img
           src={desktopBox}
